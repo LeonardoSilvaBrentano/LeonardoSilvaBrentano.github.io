@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* garante que os elementos terão o mesmo tamanho, ideal para 
+    trabalhar com responsividade */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(141deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 10%;
+    padding: 10px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+    
+h2{
+    color:  rgb(206, 215, 4);
+}
+
+#h2{
+    color: rgb(206, 145, 12)
+}
+
+#corclasse{
+    color: rgb(215, 186, 125)
+}
+
+h3{
+    color: rgb(112, 207, 61)
+}
+
+#corchaves{
+    color: rgb(206, 145, 12)
+}
+
+#corazul{
+    color: rgb(156, 220, 254)
+}
+
+#corlaranja{
+    color: rgb(206, 145, 120)
+}
+
+#coramareloclaro{
+    color: rgb(220, 220, 170)
+}
+
+#corverde{
+    color: rgb(181, 206, 168)
+}
+
+#item__navegador{
+    font-size: large;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    background-color: rgb(30,30,30);
+}
+
+.primeira__sessao{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+
+.terceira__sessao{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+    border-bottom: black solid 1px;
+    padding: 2px;    
+}
+
+.primeira__sessao_imagem{
+    width: 30%;
+    border-radius: 10%;
+}
+
+.primeira__sessao_container{
+   padding: 10px;
+}
+
+.primeira__sessao_paragrafo{
+    width: 30vh;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.segunda__sessao{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.segunda__sessao_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.segunda__sessao_titulo{
+    border-bottom: black solid 1px;
+    padding: 2px;
+}
+
+.segunda__sessao_texto{
+    border: black solid 1px;
+    width: 20vw;
+    height: 25vh;
+    
+}
+
+.segunda__sessao_texto_titulo{
+    text-align: center;
+    padding: 10px;
+}
+
+.segunda__sessao_texto_itens{
+    list-style: none;
+    margin: 5px;
+}
+
+#item{
+    padding: 2px;
+    color: rgb(181, 206, 168)
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
