@@ -1,147 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    /* garante que os elementos terão o mesmo tamanho, ideal para 
-    trabalhar com responsividade */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+h2{
+    color: #ffffff;
+}
+
+
+
+.background{
+    background: linear-gradient(rgba(0, 0, 1, 0.445), rgba(0, 0, 0, 0.5)),url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+   
 }
 
 header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(131,58,180);
-    background: linear-gradient(141deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    height: 10%;
-    padding: 10px;
-}
-
-h1{
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-}
-    
-h2{
-    color:  rgb(206, 215, 4);
-}
-
-#h2{
-    color: rgb(206, 145, 12)
-}
-
-#corclasse{
-    color: rgb(215, 186, 125)
-}
-
-h3{
-    color: rgb(112, 207, 61)
-}
-
-#corchaves{
-    color: rgb(206, 145, 12)
-}
-
-#corazul{
-    color: rgb(156, 220, 254)
-}
-
-#corlaranja{
-    color: rgb(206, 145, 120)
-}
-
-#coramareloclaro{
-    color: rgb(220, 220, 170)
-}
-
-#corverde{
-    color: rgb(181, 206, 168)
-}
-
-#item__navegador{
-    font-size: large;
-    padding: 20px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-main{
-    background-color: rgb(30,30,30);
-}
-
-.primeira__sessao{
-    display: flex;
-    justify-content: center;
-    padding: 10vh;
-}
-
-.terceira__sessao{
-    display: flex;
-    justify-content: center;
-    padding: 10vh;
-    border-bottom: black solid 1px;
-    padding: 2px;    
-}
-
-.primeira__sessao_imagem{
-    width: 30%;
-    border-radius: 10%;
-}
-
-.primeira__sessao_container{
-   padding: 10px;
-}
-
-.primeira__sessao_paragrafo{
-    width: 30vh;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-}
-
-.segunda__sessao{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.segunda__sessao_container{
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 20px;
-}
-
-.segunda__sessao_titulo{
-    border-bottom: black solid 1px;
-    padding: 2px;
-}
-
-.segunda__sessao_texto{
-    border: black solid 1px;
-    width: 20vw;
-    height: 25vh;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+   
     
 }
 
-.segunda__sessao_texto_titulo{
-    text-align: center;
-    padding: 10px;
-}
-
-.segunda__sessao_texto_itens{
-    list-style: none;
-    margin: 5px;
-}
-
-#item{
-    padding: 2px;
-    color: rgb(181, 206, 168)
-}
-
-footer{
-    background-color: rgb(255, 255, 255);
-    height: 5vh;
+.cabeçalho-link{
     display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    color:  #2ecc71;
+    transition: 0.3s all;
+}
+
+   /* estilo do botão */
+   .botao {
+    background-color: #4CAF50; /* cor de fundo */
+    color: white; /* cor do texto */
+    border: none; /* sem borda */
+    padding: 10px 20px; /* espaçamento interno */
+    border-radius: 5px; /* bordas arredondadas */
+    cursor: pointer; /* cursor de mão ao passar */
+  }
+
+  /* estilo da caixa de texto */
+  .caixa {
+    
+    display: none; /* oculta a caixa de texto inicialmente */
+    width: 50%; /* metade da largura do site */
+    padding: 10px; /* espaçamento interno */
+    border-radius: 5px; /* bordas arredondadas */
+    border: 1px solid #4CAF50; /* borda com cor cinza claro */
+    color: #ffffff;
+    background-color: #4CAF50;
+  }
+
+  /* mostra a caixa de texto quando o botão é clicado */
+  .botao:focus + .caixa {
+    display: block;
+  }
+
+
+
+.logo i{
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+button{
+    color: #2ecc71;
+    background: transparent;
+    border:solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    background-color: #2ecc71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+.text h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.text h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.text span{
+    color: #2ecc71; 
+}
+
+.text p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.redes-social{
+    margin-top: 10px;
+}
+
+.redes-social a{
+    color: #2ecc71;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+@media screen and (max-width:600px){
+    .cabeçalho-link {
+        display: none;
+    }
+    
 }
